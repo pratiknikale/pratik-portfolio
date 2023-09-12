@@ -26,3 +26,28 @@ body {
 .font-primary {
   font-family: 'Outfit', sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0D3C55;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1395BA;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* to draw hexagon divs */
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}

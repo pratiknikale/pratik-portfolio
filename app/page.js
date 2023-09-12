@@ -1,5 +1,6 @@
-import Image from 'next/image'
-import Hero from './component/Hero'
+import Image from 'next/image';
+import Hero from './component/Hero';
+import About from './component/About';
 
 export default function Home() {
   return (
@@ -14,11 +15,11 @@ export default function Home() {
           <li className="cursor-pointer hover:text-[#F16C20]">Contact</li>
         </ul>
       </nav>
-      <section>
+      <section className="mt-16">
         <Hero />
       </section>
-      <section>
-        {/* <About /> */}
+      <section className="mt-32">
+        <About />
       </section>
 
     </main>
