@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Hero from './component/Hero';
 import About from './component/About';
+import Skills from './component/Skills';
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
       </section>
       <section className="mt-32">
         <About />
+      </section>
+      <section className="mt-32">
+        <Skills />
       </section>
 
     </main>
