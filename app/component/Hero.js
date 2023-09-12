@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <>
-            <div><span className="text-[#F16C20] text-[96px] font-bold blur-[6px] opacity-30 absolute mt-20">WEB DEVELOPER</span></div>
-            <div className="grid grid-cols-2 h-[381px] content-center pt-32 relative">
+            <div><span className="text-[#F16C20] text-[96px] font-bold blur-[6px] opacity-30 absolute mt-2">WEB DEVELOPER</span></div>
+            <div className="grid grid-cols-2 h-[381px] content-center relative">
                 <div className="pr-5 flex flex-col justify-center">
                     <p className="leading-9">
                         <span className="text-[#F16C20]">Hi, I am</span><br></br>
