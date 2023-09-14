@@ -35,10 +35,10 @@ export default function Skills() {
         <>
             <div className="flex flex-col">
                 <h2 className="font-bold text-[32px] flex justify-center"><span className="">SKILLS</span></h2>
-                <div className="grid grid-cols-3 gap-4 mt-16">
+                <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-16">
                     <div className="bg-[#1395BA]/[15%] rounded-[10px]">
                         <h2 className="flex justify-center mt-6"><span className="font-bold text-[20px]  text-[#F16C20]">Frontend</span></h2>
-                        <div className="grid grid-cols-3 grid-rows-4 p-7 gap-2">
+                        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {frontEndSkills.map((skill, i) => {
                                 return (
                                     <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
@@ -62,7 +62,7 @@ export default function Skills() {
 
                     <div className="bg-[#1395BA]/[15%] rounded-[10px]">
                         <h2 className="flex justify-center mt-6"><span className="font-bold text-[20px]  text-[#F16C20]">Backend</span></h2>
-                        <div className="grid grid-cols-3 grid-rows-4 p-7 gap-2">
+                        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {backEndSkills.map((skill, i) => {
                                 return (
                                     <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
@@ -85,7 +85,7 @@ export default function Skills() {
                     </div>
                     <div className="bg-[#1395BA]/[15%] rounded-[10px]">
                         <h2 className="flex justify-center mt-6"><span className="font-bold text-[20px]  text-[#F16C20]">Tools/Other</span></h2>
-                        <div className="grid grid-cols-3 grid-rows-4 p-7 gap-2">
+                        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {otherSkills.map((skill, i) => {
                                 return (
                                     <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
