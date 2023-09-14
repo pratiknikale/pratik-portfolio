@@ -6,9 +6,9 @@ export default function About() {
         <>
             <div className="flex flex-col">
                 <h2 className="font-bold text-[32px] flex justify-center"><span className="">ABOUT</span></h2>
-                <div className="grid grid-cols-5 gap-4 mt-20">
+                <div className="grid grid-cols-5 gap-4 mt-16">
                     <div className="flex flex-col items-center">
-                        <div class="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
                                     className="drop-shadow-2xl"
@@ -23,7 +23,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div class="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
                                     className="drop-shadow-2xl"
@@ -38,7 +38,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div class="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
                                     className="drop-shadow-2xl"
@@ -53,7 +53,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div class="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
                                     className="drop-shadow-2xl"
@@ -68,7 +68,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div class="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
                                     className="drop-shadow-2xl"
