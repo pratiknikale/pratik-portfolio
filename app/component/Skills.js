@@ -35,14 +35,14 @@ export default function Skills() {
         <>
             <div className="flex flex-col">
                 <h2 className="font-bold text-[32px] flex justify-center"><span className="">SKILLS</span></h2>
-                <div className="grid grid-cols-3 gap-4 mt-20">
+                <div className="grid grid-cols-3 gap-4 mt-16">
                     <div className="bg-[#1395BA]/[15%] rounded-[10px]">
                         <h2 className="flex justify-center mt-6"><span className="font-bold text-[20px]  text-[#F16C20]">Frontend</span></h2>
                         <div className="grid grid-cols-3 grid-rows-4 p-7 gap-2">
                             {frontEndSkills.map((skill, i) => {
                                 return (
                                     <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
-                                        <div class="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
+                                        <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
                                                     className="drop-shadow-2xl rounded-[10px]"
@@ -66,7 +66,7 @@ export default function Skills() {
                             {backEndSkills.map((skill, i) => {
                                 return (
                                     <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
-                                        <div class="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
+                                        <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
                                                     className="drop-shadow-2xl rounded-[10px]"
@@ -89,7 +89,7 @@ export default function Skills() {
                             {otherSkills.map((skill, i) => {
                                 return (
                                     <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
-                                        <div class="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
+                                        <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
                                                     className="drop-shadow-2xl rounded-[10px]"
