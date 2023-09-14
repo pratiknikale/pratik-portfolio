@@ -1,10 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
         <>
-            <div><span className="text-[#F16C20] text-[96px] font-bold blur-[6px] opacity-30 absolute mt-2">WEB DEVELOPER</span></div>
-            <div className="grid grid-cols-2 h-[381px] content-center relative">
+            <div>
+                <span className="text-[#F16C20] text-[96px] font-bold blur-[6px] opacity-30 absolute mt-2 sm:block hidden">WEB DEVELOPER</span>
+            </div>
+            <div className="grid sm:grid-cols-2 grid-cols-1 h-[381px] content-center relative">
                 <div className="pr-5 flex flex-col justify-center">
                     <p className="leading-9">
                         <span className="text-[#F16C20]">Hi, I am</span><br></br>
@@ -12,9 +15,13 @@ export default function Hero() {
                         <span className="text-[#F16C20] text-[36px]">Full Stack Developer</span><br></br>
                     </p>
                     <p className="leading-[20px] py-1">Experienced Full Stack Engineer with a demonstrated history of working in IT industry. Skilled in building elegant and performing web applications and software. vienviei eivie vieuvieun vde vi vienvienvedv ind ivnedivne vie viedviednv iednvednvie.</p>
-                    <div className="hero-buttons flex">
-                        <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[181px] h-[35px] rounded-[10px] mt-[16px]">Download Resume</button>
-                        <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[181px] h-[35px] rounded-[10px] ml-[11px] mt-[16px]">Contact Me</button>
+                    <div className="hero-buttons flex flex-wrap">
+                        <Link href="/Pratik Resume.pdf" target="blank">
+                            <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[158px] h-[35px] rounded-[10px] mr-[11px] mt-[16px]">Download Resume</button>
+                        </Link>
+                        <Link href="#section_contact">
+                            <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[158px] h-[35px] rounded-[10px] mr-[11px] mt-[16px]">Contact Me</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex justify-end content-center">

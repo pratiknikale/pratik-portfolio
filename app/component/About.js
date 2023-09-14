@@ -6,7 +6,7 @@ export default function About() {
         <>
             <div className="flex flex-col">
                 <h2 className="font-bold text-[32px] flex justify-center"><span className="">ABOUT</span></h2>
-                <div className="grid grid-cols-5 gap-4 mt-16">
+                <div className="grid sm:grid-cols-5 grid-cols-2 gap-4 mt-16">
                     <div className="flex flex-col items-center">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
@@ -85,10 +85,19 @@ export default function About() {
 
                 </div>
 
-                <div className="grid grid-cols-2 mt-20">
-                    <div className="bg-[#1395BA]/[15%] rounded-[10px] h-[400px] flex flex-col justify-center items-center">
+                <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20">
+                    <div className="h-[400px] flex flex-col justify-center">
+                        <Image
+                            className="rounded-full"
+                            src="/logo-images/profilePicture.png"
+                            width={400}
+                            height={400}
+                            alt="Hero Image"
+                        />
+                    </div>
+                    <div className="sm:bg-[#1395BA]/[15%] bg-none rounded-[10px] h-[400px] flex flex-col justify-center items-center">
                         <p className="text-[#F16C20] font-bold text-[20px]">Who is this guy?</p>
-                        <p className="mt-10 px-10 text-center leading-[20px]">I'm a Full-Stack Developer who has serious passion for logic building, problem solving, web development and technology. Let's make something special.</p>
+                        <p className="mt-10 sm:px-10 px-4 text-center leading-[20px]">I'm a Full-Stack Developer who has serious passion for logic building, problem solving, web development and technology. Let's make something special.</p>
                         <div className="social-icon-links mt-10 h-12">
                             <Link href="https://github.com/pratiknikale" target="blank">
                                 <Image
@@ -109,15 +118,6 @@ export default function About() {
                                 />
                             </Link>
                         </div>
-                    </div>
-                    <div className="h-[400px] flex flex-col justify-center items-end">
-                        <Image
-                            className="rounded-full"
-                            src="/logo-images/profilePicture.png"
-                            width={400}
-                            height={400}
-                            alt="Hero Image"
-                        />
                     </div>
                 </div>
 

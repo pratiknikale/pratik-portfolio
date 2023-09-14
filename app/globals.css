@@ -17,6 +17,10 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #EDEDED;
   background: #0D3C55;

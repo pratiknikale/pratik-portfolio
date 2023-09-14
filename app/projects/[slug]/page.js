@@ -31,7 +31,7 @@ const Project = ({ params }) => {
                 />
             </div>
             <div className='relative'>
-                <main className="py-4 px-[185px] font-primary">
+                <main className="py-4 xl:px-[185px] lg:px-[140px] md:px-[50px] px-[16px] font-primary">
                     <h1 className="text-[#F16C20] font-bold text-[32px] flex justify-center"><span className="">{params.slug}</span></h1>
                     {project && project.videoUrl && <>
                         <div className="videoPlayer w-[100%] mt-16">
@@ -45,7 +45,7 @@ const Project = ({ params }) => {
                         </div>
                     </>
                     }
-                    <div className="grid grid-cols-3 mt-6 gap-2">
+                    <div className="grid md:grid-cols-3 grid-cols-1 mt-6 gap-2">
                         <div className="bg-[#1395BA]/[15%] rounded-[10px] col-span-2 px-10 py-10">
                             <h2 className=""><span className="font-bold text-[20px]  text-[#F16C20]">Description</span></h2>
                             <ul className="mt-8">
@@ -68,7 +68,7 @@ const Project = ({ params }) => {
                         </div>
                         <div className="bg-[#1395BA]/[15%] rounded-[10px] py-10">
                             <h2 className="flex justify-center"><span className="font-bold text-[20px]  text-[#F16C20]">Technologies Used</span></h2>
-                            <div className="grid grid-cols-3 p-7 gap-2">
+                            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 p-7 gap-2">
                                 {project && project?.technologies?.map((tech, i) => {
                                     return (
                                         <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">

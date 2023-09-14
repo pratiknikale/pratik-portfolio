@@ -3,8 +3,11 @@ import Hero from './component/Hero';
 import About from './component/About';
 import Skills from './component/Skills';
 import Projects from './component/Projects';
+import Contact from './component/Contact';
+import Navbar from './component/Navbar';
 
 export default function Home() {
+
   return (
     <>
       <div className='absolute'>
@@ -18,31 +21,27 @@ export default function Home() {
         />
       </div>
       <div className='relative'>
-        <main className="py-4 px-[185px] font-primary">
-          <nav className="py-6 flex justify-between">
-            <span className="text-[#F16C20] text-[20px] font-bold">PN</span>
-            <ul className='inline-flex space-x-[70px]'>
-              <li className="cursor-pointer hover:text-[#F16C20]">Home</li>
-              <li className="cursor-pointer hover:text-[#F16C20]">About</li>
-              <li className="cursor-pointer hover:text-[#F16C20]">Skills</li>
-              <li className="cursor-pointer hover:text-[#F16C20]">Projects</li>
-              <li className="cursor-pointer hover:text-[#F16C20]">Contact</li>
-            </ul>
-          </nav>
-          <section className="mt-16">
+        <main className="py-4 pb-32 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[16px] font-primary">
+          <Navbar />
+          <section id="section_hero" className="sm:mt-16 mt-28">
             <Hero />
           </section>
-          <section className="mt-32">
+          <section id="section_about" className="sm:mt-32 mt-52">
             <About />
           </section>
-          <section className="mt-32">
+          <section id="section_skills" className="mt-32">
             <Skills />
           </section>
-          <section className="mt-32">
+          <section id="section_projects" className="mt-32">
             <Projects />
+          </section>
+          <section id="section_contact" className="mt-32">
+            <Contact />
           </section>
 
         </main>
+        <div className="myFooter bg-[#1395BA]/[15%] h-[50px] sm:text-[14px] text-[10px] text-[#bebebe] flex justify-center items-center">@ Copyright 2023. Developed by Pratik Nikale. All rights reserved.</div>
+
       </div>
     </>
   )
