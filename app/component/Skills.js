@@ -41,7 +41,7 @@ export default function Skills() {
                         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {frontEndSkills.map((skill, i) => {
                                 return (
-                                    <div className="flex mb-3 flex-col justify-center items-center hover:scale-105">
+                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105">
                                         <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
