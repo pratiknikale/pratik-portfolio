@@ -80,7 +80,7 @@ export default function About() {
                             </span>
                         </div>
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Dynamic</p>
-                        <p className="text-center px-[3px] leading-[20px]">Websites don't have to be static, I love making pages come to life.</p>
+                        <p className="text-center px-[3px] leading-[20px]">Websites don&apos;t have to be static, I love making pages come to life.</p>
                     </div>
 
                 </div>
@@ -97,7 +97,7 @@ export default function About() {
                     </div>
                     <div className="sm:bg-[#1395BA]/[15%] bg-none rounded-[10px] h-[400px] flex flex-col justify-center items-center">
                         <p className="text-[#F16C20] font-bold text-[20px]">Who is this guy?</p>
-                        <p className="mt-10 sm:px-10 px-4 text-center leading-[20px]">I'm a Full-Stack Developer who has serious passion for logic building, problem solving, web development and technology. Experienced Full Stack Engineer with a demonstrated history of working in IT industry. Skilled in building elegant and performing web applications and software. <Link href="#section_contact"><span className="text-[#83e0fa]">Let's make something special</span></Link>.</p>
+                        <p className="mt-10 sm:px-10 px-4 text-center leading-[20px]">I&apos;m a Full-Stack Developer who has serious passion for logic building, problem solving, web development and technology. Experienced Full Stack Engineer with a demonstrated history of working in IT industry. Skilled in building elegant and performing web applications and software. <Link href="#section_contact"><span className="text-[#83e0fa]">Let&apos;s make something special</span></Link>.</p>
                         <div className="social-icon-links mt-10 h-12">
                             <Link href="https://github.com/pratiknikale" target="blank">
                                 <Image
