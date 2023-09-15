@@ -12,12 +12,12 @@ const projects = [
             { name: "Redux", logo: "redux_logo.png" },
             { name: "Node.js", logo: "node_logo.png" },
             { name: "JavaScript", logo: "javascript_logo.png" },
-            { name: "JWT", logo: "react_logo.png" },
-            { name: "oAuth", logo: "react_logo.png" },
+            { name: "JWT", logo: "jwt_logo.png" },
+            { name: "oAuth", logo: "oAuth_logo.png" },
             { name: "Express.js", logo: "express_logo.png" },
             { name: "Mongodb", logo: "mongodb_logo.png" }
         ],
-        videoUrl: "3dDesignerDemo1.mp4",
+        videoUrl: "3dRoomDesigner_demo.mp4",
         githubLink: "https://github.com/pratiknikale/3D_RoomDesigner-Frontend",
         liveLink: "https://threedroomdesigner.netlify.app/"
     },
@@ -37,9 +37,9 @@ const projects = [
             { name: "JavaScript", logo: "javascript_logo.png" },
             { name: "Express.js", logo: "express_logo.png" },
             { name: "Socket.io", logo: "socket_logo.png" },
-            { name: "jwt", logo: "react_logo.png" }
+            { name: "jwt", logo: "jwt_logo.png" }
         ],
-        videoUrl: "3dDesignerDemo1.mp4",
+        videoUrl: "managefy_demo.mp4",
         githubLink: "https://github.com/pratiknikale/ManageFY-frontend",
         liveLink: "https://managefy.netlify.app/"
     }

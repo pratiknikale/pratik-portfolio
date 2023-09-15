@@ -14,7 +14,7 @@ export default function Hero() {
                         <span className="font-bold text-[36px]">Pratik Nikale</span><br></br>
                         <span className="text-[#F16C20] text-[36px]">Full Stack Developer</span><br></br>
                     </p>
-                    <p className="leading-[20px] py-1">Experienced Full Stack Engineer with a demonstrated history of working in IT industry. Skilled in building elegant and performing web applications and software. vienviei eivie vieuvieun vde vi vienvienvedv ind ivnedivne vie viedviednv iednvednvie.</p>
+                    <p className="leading-[20px] py-4">Crafting digital marvels with Full Stack, MERN and Web expertise. Empowering your web journey with precision and innovaton.</p>
                     <div className="hero-buttons flex flex-wrap">
                         <Link href="/Pratik Resume.pdf" target="blank">
                             <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[158px] h-[35px] rounded-[10px] mr-[11px] mt-[16px]">Download Resume</button>
