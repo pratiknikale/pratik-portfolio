@@ -22,7 +22,7 @@ export default function About() {
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Fast</p>
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
-                    <div className="flex flex-col items-center sm:block hidden">
+                    <div className="sm:flex sm:flex-col items-center hidden">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
@@ -85,10 +85,10 @@ export default function About() {
 
                 </div>
 
-                <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20">
+                <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20 sm:bg-transparent bg-[#1395BA]/[15%]">
                     <div className="flex flex-col justify-center sm:items-start items-center">
                         <Image
-                            className="rounded-full sm:w-[400px] sm:h-auto w-[260px] h-[260px]"
+                            className="rounded-full sm:w-[400px] sm:h-auto w-[260px] h-[260px] sm:mt-0 mt-10"
                             src="/logo-images/profilePicture.png"
                             width={0}
                             height={0}
