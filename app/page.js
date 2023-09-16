@@ -15,10 +15,10 @@ export default function Home() {
         <section id="section_home" className="">
           <Navbar />
         </section>
-        <section id="section_hero" className="sm:mt-16 mt-28">
+        <section id="section_hero" className="sm:mt-16 mt-24">
           <Hero />
         </section>
-        <section id="section_about" className="sm:mt-32 mt-52">
+        <section id="section_about" className="sm:mt-32 mt-[265px]">
           <About />
         </section>
         <section id="section_skills" className="mt-32">
