@@ -15,7 +15,7 @@ export default function Projects() {
                                 ?
                                 <>
                                     <div className="grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px]">
-                                        <div className="sm:px-6 px-3 flex flex-col justify-center sm:py-10 pb-10 sm:order-first order-last">
+                                        <div className="sm:px-6 px-4 flex flex-col justify-center sm:py-10 pb-10 sm:order-first order-last">
                                             <h2 className="text-[#F16C20] font-bold text-[20px]">{project.name}</h2>
                                             <p className="leading-[20px] py-2">{project.discriptionPoints[0].substring(0, 150) + " ..."}</p>
                                             <div className="grid xl:grid-cols-8 md:grid-cols-5 grid-cols-4 gap-2 py-2">
@@ -57,7 +57,7 @@ export default function Projects() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        <div className="flex items-center sm:px-6 px-3 py-10">
+                                        <div className="flex items-center sm:px-6 px-4 py-10">
                                             <Image
                                                 className="transition ease-in-out delay-40 duration-200 hover:scale-[1.18] w-[100%] rounded-[10px]"
                                                 src={`/${project.thumbnailUrl}`}
@@ -71,7 +71,7 @@ export default function Projects() {
                                 :
                                 <>
                                     <div className="grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] mt-4">
-                                        <div className="flex items-center sm:px-6 px-3 py-10">
+                                        <div className="flex items-center sm:px-6 px-4 py-10">
                                             <Image
                                                 className="transition ease-in-out delay-40 duration-200 hover:scale-[1.18] w-[100%] rounded-[10px]"
                                                 src={`/${project.thumbnailUrl}`}
@@ -80,7 +80,7 @@ export default function Projects() {
                                                 alt="Hero Image"
                                             />
                                         </div>
-                                        <div className="sm:px-6 px-3 flex flex-col justify-center sm:py-10 pb-10">
+                                        <div className="sm:px-6 px-4 flex flex-col justify-center sm:py-10 pb-10">
                                             <h2 className="text-[#F16C20] font-bold text-[20px]">{project.name}</h2>
                                             <p className="leading-[20px] py-2">{project.discriptionPoints[0].substring(0, 180) + " ..."}</p>
                                             <div className="grid xl:grid-cols-8 md:grid-cols-5 grid-cols-4 gap-2 py-2">

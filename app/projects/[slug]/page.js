@@ -33,7 +33,7 @@ const Project = ({ params }) => {
                     />
                 </div>
                 <div className='relative'>
-                    <main className="py-4 xl:px-[185px] lg:px-[140px] md:px-[50px] px-[16px] font-primary">
+                    <main className="py-4 xl:px-[185px] lg:px-[140px] md:px-[50px] px-[12px] font-primary">
                         <section id="section_home" className="">
                             <Navbar />
                         </section>

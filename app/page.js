@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
 
-      <main className="py-4 pb-32 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[10px] font-primary">
+      <main className="py-4 pb-32 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[12px] font-primary">
 
         <section id="section_home" className="">
           <Navbar />
