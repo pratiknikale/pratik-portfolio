@@ -25,7 +25,7 @@ export default function Hero() {
                             <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[158px] h-[35px] rounded-[10px] mr-[11px] mt-[16px] transition ease-in-out delay-40 duration-150">Download Resume</button>
                         </Link>
                         <Link href="#section_contact">
-                            <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[158px] h-[35px] rounded-[10px] mr-[11px] mt-[16px] transition ease-in-out delay-40 duration-150">Contact Me</button>
+                            <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[158px] h-[35px] rounded-[10px]  mt-[16px] transition ease-in-out delay-40 duration-150">Contact Me</button>
                         </Link>
                     </div>
                 </div>
