@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
             <div className="flex flex-col">
-                <h2 className="font-bold text-[32px] flex justify-center"><span className="">ABOUT</span></h2>
+                <h2 className="font-bold text-[36px] flex justify-center"><span className="">ABOUT</span></h2>
                 <div className="grid sm:grid-cols-5 grid-cols-2 gap-4 mt-16">
                     <div className="flex flex-col items-center">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
@@ -22,7 +22,7 @@ export default function About() {
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Fast</p>
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center sm:block hidden">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
                                 <Image
@@ -86,12 +86,13 @@ export default function About() {
                 </div>
 
                 <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20">
-                    <div className="h-[400px] flex flex-col justify-center">
+                    <div className="flex flex-col justify-center sm:items-start items-center">
                         <Image
-                            className="rounded-full"
+                            className="rounded-full sm:w-[400px] sm:h-auto w-[260px] h-[260px]"
                             src="/logo-images/profilePicture.png"
-                            width={400}
-                            height={400}
+                            width={0}
+                            height={0}
+                            sizes='100vw'
                             alt="Hero Image"
                         />
                     </div>
@@ -101,7 +102,7 @@ export default function About() {
                         <div className="social-icon-links mt-10 h-12">
                             <Link href="https://github.com/pratiknikale" target="blank">
                                 <Image
-                                    className="drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
+                                    className="transition ease-in-out delay-40 duration-200 drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
                                     src="/logo-images/github-sign.png"
                                     width={40}
                                     height={40}
@@ -110,7 +111,7 @@ export default function About() {
                             </Link>
                             <Link href="https://www.linkedin.com/in/pratik-nikale/" target="blank">
                                 <Image
-                                    className="drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
+                                    className="transition ease-in-out delay-40 duration-200 drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
                                     src="/logo-images/linkedin.png"
                                     width={40}
                                     height={40}

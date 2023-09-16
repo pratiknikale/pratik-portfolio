@@ -11,7 +11,10 @@ export default function Home() {
     <>
 
       <main className="py-4 pb-32 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[16px] font-primary">
-        <Navbar />
+
+        <section id="section_home" className="">
+          <Navbar />
+        </section>
         <section id="section_hero" className="sm:mt-16 mt-28">
           <Hero />
         </section>
