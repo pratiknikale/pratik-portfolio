@@ -34,14 +34,14 @@ export default function Skills() {
     return (
         <>
             <div className="flex flex-col">
-                <h2 className="font-bold text-[32px] flex justify-center"><span className="">SKILLS</span></h2>
+                <h2 className="font-bold text-[36px] flex justify-center"><span className="">SKILLS</span></h2>
                 <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-16">
                     <div className="bg-[#1395BA]/[15%] rounded-[10px]">
                         <h2 className="flex justify-center mt-6"><span className="font-bold text-[20px]  text-[#F16C20]">Frontend</span></h2>
                         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {frontEndSkills.map((skill, i) => {
                                 return (
-                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105">
+                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105 transition ease-in-out delay-40 duration-150">
                                         <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
@@ -65,7 +65,7 @@ export default function Skills() {
                         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {backEndSkills.map((skill, i) => {
                                 return (
-                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105">
+                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105 transition ease-in-out delay-40 duration-150">
                                         <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
@@ -88,7 +88,7 @@ export default function Skills() {
                         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 p-7 gap-2">
                             {otherSkills.map((skill, i) => {
                                 return (
-                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105">
+                                    <div key={skill.name} className="flex mb-3 flex-col justify-center items-center hover:scale-105 transition ease-in-out delay-40 duration-150">
                                         <div className="bg-[#1395BA] h-[70px] w-[70px] rounded-full flex justify-center items-center">
                                             <span>
                                                 <Image
