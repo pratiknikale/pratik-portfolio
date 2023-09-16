@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
 
-      <main className="py-4 pb-32 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[16px] font-primary">
+      <main className="py-4 pb-32 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[10px] font-primary">
 
         <section id="section_home" className="">
           <Navbar />
@@ -18,7 +18,7 @@ export default function Home() {
         <section id="section_hero" className="sm:mt-16 mt-24">
           <Hero />
         </section>
-        <section id="section_about" className="sm:mt-32 mt-[265px]">
+        <section id="section_about" className="sm:mt-32 mt-[270px]">
           <About />
         </section>
         <section id="section_skills" className="mt-32">
