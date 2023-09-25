@@ -51,6 +51,19 @@ export default function About() {
     return (
         <>
             <div className="flex flex-col">
+                <div className="grid grid-cols-2">
+                    <div className="col-span-2 flex justify-center mb-3">
+                        <Image
+                            className="transition ease-in-out delay-40 duration-200 drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
+                            src="/logo-images/aboutLogo.png"
+                            width={40}
+                            height={40}
+                            alt="about logo"
+                        />
+                    </div>
+                    <div className="h-[28px] border-solid border-[#F16C20] border-r-2"></div>
+                    <div className="h-[28px] border-solid border-[#F16C20] border-l-2"></div>
+                </div>
                 <h2 className="font-bold text-[36px] flex justify-center"><span className="">ABOUT</span></h2>
                 <div className="grid sm:grid-cols-5 grid-cols-2 gap-4 mt-16">
                     <div className="flex flex-col items-center">
@@ -103,7 +116,7 @@ export default function About() {
 
                 <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20 sm:bg-transparent bg-[#1395BA]/[15%]">
                     <div className="flex flex-col justify-center sm:items-start items-center">
-                        <div className="rounded-full bg-[#1395BA]/[15%] sm:mt-0 mt-10 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.5)]">
+                        <div className="animation-pulse rounded-full bg-[#1395BA]/[15%] sm:mt-0 mt-10">
                             <Image
                                 className="rounded-full p-3 sm:w-[400px] sm:h-auto w-[260px] h-[260px]"
                                 src="/logo-images/profilePicture.png"
