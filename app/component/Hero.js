@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import {Typewriter} from "react-simple-typewriter";
-import {useEffect, useRef} from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 
 export default function Hero() {
@@ -68,13 +68,6 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-end content-center">
-          {/* <Image
-                        className="imageFade drop-shadow-2xl"
-                        src="/logo-images/Web-development,-programmer-engineering-and-coding-website-on-augmented-reality-interface-screens-on-transparent-background-PNG.png"
-                        width={484}
-                        height={381}
-                        alt="Hero Image"
-                    /> */}
           <div className="AnimatedImage float-right" ref={AnimatedImage}></div>
         </div>
       </div>
