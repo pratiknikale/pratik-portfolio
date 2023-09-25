@@ -57,9 +57,9 @@ export default function Projects() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        <div className="flex items-center sm:px-6 px-4 py-10">
+                                        <div className="flex items-center sm:p-3 sm:pb-3 pb-6 p-1">
                                             <Image
-                                                className="transition ease-in-out delay-40 duration-200 hover:scale-[1.18] w-[100%] rounded-[10px]"
+                                                className="object-cover w-[100%] lg:h-[100%] rounded-[10px]"
                                                 src={`/${project.thumbnailUrl}`}
                                                 width={1000}
                                                 height={1000}
@@ -71,9 +71,9 @@ export default function Projects() {
                                 :
                                 <>
                                     <div className="grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] mt-4">
-                                        <div className="flex items-center sm:px-6 px-4 py-10">
+                                        <div className="flex items-center sm:p-3 sm:pb-3 pb-6 p-1">
                                             <Image
-                                                className="transition ease-in-out delay-40 duration-200 hover:scale-[1.18] w-[100%] rounded-[10px]"
+                                                className="object-cover w-[100%] lg:h-[100%] rounded-[10px]"
                                                 src={`/${project.thumbnailUrl}`}
                                                 width={1000}
                                                 height={1000}

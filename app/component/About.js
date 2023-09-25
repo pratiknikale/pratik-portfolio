@@ -1,7 +1,53 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import lottie from "lottie-web";
 
 export default function About() {
+    const fastAni = useRef(null);
+    const responsiveAni = useRef(null);
+    const complexAni = useRef(null);
+    const scalableAni = useRef(null);
+    const dynamicAni = useRef(null);
+
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: fastAni.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: require("../../public/fastAni.json"),
+        });
+        lottie.loadAnimation({
+            container: responsiveAni.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: require("../../public/responsiveAni.json"),
+        });
+        lottie.loadAnimation({
+            container: complexAni.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: require("../../public/complexAni.json"),
+        });
+        lottie.loadAnimation({
+            container: scalableAni.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: require("../../public/scalableAni.json"),
+        });
+        lottie.loadAnimation({
+            container: dynamicAni.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: require("../../public/dynamicAni.json"),
+        });
+    }, []);
     return (
         <>
             <div className="flex flex-col">
@@ -10,13 +56,7 @@ export default function About() {
                     <div className="flex flex-col items-center">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
-                                <Image
-                                    className="drop-shadow-2xl"
-                                    src="/logo-images/fast.png"
-                                    width={65}
-                                    height={65}
-                                    alt="Hero Image"
-                                />
+                                <div className="fastAni p-4" ref={fastAni}></div>
                             </span>
                         </div>
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Fast</p>
@@ -25,13 +65,7 @@ export default function About() {
                     <div className="sm:flex sm:flex-col items-center hidden">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
-                                <Image
-                                    className="drop-shadow-2xl"
-                                    src="/logo-images/responsive (1).png"
-                                    width={70}
-                                    height={70}
-                                    alt="Hero Image"
-                                />
+                                <div className="responsiveAni p-2" ref={responsiveAni}></div>
                             </span>
                         </div>
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Responsive</p>
@@ -40,13 +74,7 @@ export default function About() {
                     <div className="flex flex-col items-center">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
-                                <Image
-                                    className="drop-shadow-2xl"
-                                    src="/logo-images/algorithm (1).png"
-                                    width={60}
-                                    height={60}
-                                    alt="Hero Image"
-                                />
+                                <div className="complexAni" ref={complexAni}></div>
                             </span>
                         </div>
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Complex</p>
@@ -55,13 +83,7 @@ export default function About() {
                     <div className="flex flex-col items-center">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
-                                <Image
-                                    className="drop-shadow-2xl"
-                                    src="/logo-images/scalable (1).png"
-                                    width={60}
-                                    height={60}
-                                    alt="Hero Image"
-                                />
+                                <div className="scalableAni p-3" ref={scalableAni}></div>
                             </span>
                         </div>
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Scalable</p>
@@ -70,13 +92,7 @@ export default function About() {
                     <div className="flex flex-col items-center">
                         <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
                             <span>
-                                <Image
-                                    className="drop-shadow-2xl"
-                                    src="/logo-images/routing (1).png"
-                                    width={60}
-                                    height={60}
-                                    alt="Hero Image"
-                                />
+                                <div className="dynamicAni scale-125" ref={dynamicAni}></div>
                             </span>
                         </div>
                         <p className="my-2 text-center px-[3px] text-[#F16C20] font-bold text-[20px]">Dynamic</p>
@@ -87,14 +103,16 @@ export default function About() {
 
                 <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20 sm:bg-transparent bg-[#1395BA]/[15%]">
                     <div className="flex flex-col justify-center sm:items-start items-center">
-                        <Image
-                            className="rounded-full sm:w-[400px] sm:h-auto w-[260px] h-[260px] sm:mt-0 mt-10"
-                            src="/logo-images/profilePicture.png"
-                            width={0}
-                            height={0}
-                            sizes='100vw'
-                            alt="Hero Image"
-                        />
+                        <div className="rounded-full bg-[#1395BA]/[15%] sm:mt-0 mt-10 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.5)]">
+                            <Image
+                                className="rounded-full p-3 sm:w-[400px] sm:h-auto w-[260px] h-[260px]"
+                                src="/logo-images/profilePicture.png"
+                                width={0}
+                                height={0}
+                                sizes='100vw'
+                                alt="Hero Image"
+                            />
+                        </div>
                     </div>
                     <div className="sm:bg-[#1395BA]/[15%] bg-none rounded-[10px] h-[400px] flex flex-col justify-center items-center">
                         <p className="text-[#F16C20] font-bold text-[20px]">Who is this guy?</p>
