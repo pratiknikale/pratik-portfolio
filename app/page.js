@@ -18,16 +18,16 @@ export default function Home() {
         <section id="section_hero" className="sm:mt-16 mt-24">
           <Hero />
         </section>
-        <section id="section_about" className="sm:mt-32 mt-[270px]">
+        <section id="section_about" className="sm:mt-36 mt-[300px]">
           <About />
         </section>
-        <section id="section_skills" className="mt-32">
+        <section id="section_skills" className="mt-36">
           <Skills />
         </section>
-        <section id="section_projects" className="mt-32">
+        <section id="section_projects" className="mt-36">
           <Projects />
         </section>
-        <section id="section_contact" className="mt-32">
+        <section id="section_contact" className="mt-36">
           <Contact />
         </section>
 

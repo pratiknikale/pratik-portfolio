@@ -7,6 +7,19 @@ export default function Projects() {
     return (
         <>
             <div className="flex flex-col">
+                <div className="grid grid-cols-2">
+                    <div className="col-span-2 flex justify-center mb-3">
+                        <Image
+                            className="transition ease-in-out delay-40 duration-200 drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
+                            src="/logo-images/projectsLogo.png"
+                            width={40}
+                            height={40}
+                            alt="projects logo"
+                        />
+                    </div>
+                    <div className="h-[28px] border-solid border-[#F16C20] border-r-2"></div>
+                    <div className="h-[28px] border-solid border-[#F16C20] border-l-2"></div>
+                </div>
                 <h2 className="font-bold text-[36px] flex justify-center"><span className="">PROJECTS</span></h2>
                 <div className="mt-16">
                     {ProjectData.map((project, i) => {
@@ -14,7 +27,7 @@ export default function Projects() {
                             {i % 2 == 0
                                 ?
                                 <>
-                                    <div className="grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px]">
+                                    <div className={`grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] ${i === 0 ? "mt-0" : "mt-5"}`}>
                                         <div className="sm:px-6 px-4 flex flex-col justify-center sm:py-10 pb-10 sm:order-first order-last">
                                             <h2 className="text-[#F16C20] font-bold text-[20px]">{project.name}</h2>
                                             <p className="leading-[20px] py-2">{project.discriptionPoints[0].substring(0, 150) + " ..."}</p>
@@ -58,27 +71,31 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <div className="flex items-center sm:p-3 sm:pb-3 pb-6 p-1">
-                                            <Image
-                                                className="object-cover w-[100%] lg:h-[100%] rounded-[10px]"
-                                                src={`/${project.thumbnailUrl}`}
-                                                width={1000}
-                                                height={1000}
-                                                alt="Hero Image"
-                                            />
+                                            <Link className="w-[100%] lg:h-[100%]" href={`/projects/${project.name}`}>
+                                                <Image
+                                                    className="object-cover w-[100%] lg:h-[100%] rounded-[10px]"
+                                                    src={`/${project.thumbnailUrl}`}
+                                                    width={1000}
+                                                    height={1000}
+                                                    alt="Hero Image"
+                                                />
+                                            </Link>
                                         </div>
                                     </div>
                                 </>
                                 :
                                 <>
-                                    <div className="grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] mt-4">
+                                    <div className={`grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] ${i === 0 ? "mt-0" : "mt-5"}`}>
                                         <div className="flex items-center sm:p-3 sm:pb-3 pb-6 p-1">
-                                            <Image
-                                                className="object-cover w-[100%] lg:h-[100%] rounded-[10px]"
-                                                src={`/${project.thumbnailUrl}`}
-                                                width={1000}
-                                                height={1000}
-                                                alt="Hero Image"
-                                            />
+                                            <Link className="w-[100%] lg:h-[100%]" href={`/projects/${project.name}`}>
+                                                <Image
+                                                    className="object-cover w-[100%] lg:h-[100%] rounded-[10px]"
+                                                    src={`/${project.thumbnailUrl}`}
+                                                    width={1000}
+                                                    height={1000}
+                                                    alt="Hero Image"
+                                                />
+                                            </Link>
                                         </div>
                                         <div className="sm:px-6 px-4 flex flex-col justify-center sm:py-10 pb-10">
                                             <h2 className="text-[#F16C20] font-bold text-[20px]">{project.name}</h2>

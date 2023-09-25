@@ -34,6 +34,19 @@ export default function Contact() {
     return (
         <>
             <div className="flex flex-col">
+                <div className="grid grid-cols-2">
+                    <div className="col-span-2 flex justify-center mb-3">
+                        <Image
+                            className="transition ease-in-out delay-40 duration-200 drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
+                            src="/logo-images/ContactLogo.png"
+                            width={40}
+                            height={40}
+                            alt="contact logo"
+                        />
+                    </div>
+                    <div className="h-[28px] border-solid border-[#F16C20] border-r-2"></div>
+                    <div className="h-[28px] border-solid border-[#F16C20] border-l-2"></div>
+                </div>
                 <h2 className="font-bold text-[36px] flex justify-center"><span className="">CONTACT</span></h2>
                 <div className="mt-10">
                     <h2 className="flex justify-center"><span className="font-bold text-[20px] text-[#F16C20] text-center">Have a question or want to work together?</span></h2>
