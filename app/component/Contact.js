@@ -38,7 +38,7 @@ export default function Contact() {
                     <div className="col-span-2 flex justify-center mb-3">
                         <Image
                             className="transition ease-in-out delay-40 duration-200 drop-shadow-2xl hover:scale-105 hover:drop-shadow-[0px_0px_2px_#1395BA] inline mx-[5px] cursor-pointer"
-                            src="/logo-images/ContactLogo.png"
+                            src="/logo-images/contactLogo.png"
                             width={40}
                             height={40}
                             alt="contact logo"
