@@ -6,6 +6,8 @@ const projects = [
             "Developing a web application in a CI/CD environment capable of creating and customising a 3d representation of your room (bedroom, living room, kitchen).",
             "The application will help customize the users room in all the ways possible like room dimension, color, wallpaper, window, door, adding objects in room like bed, table, chair, table lamp and also position the object as user wish."
         ],
+        demoCredentials_Email: "prnikale@gmail.com",
+        demoCredentials_Pass: "123",
         technologies: [
             { name: "React.js", logo: "react_logo.png" },
             { name: "Three.js", logo: "three_logo.png" },
@@ -29,6 +31,8 @@ const projects = [
             "Provides real-time chats between users.",
             "It undergoes proper user authentication using jwt token."
         ],
+        demoCredentials_Email: "manager@demo.com",
+        demoCredentials_Pass: "123456789",
         technologies: [
             { name: "React.js", logo: "react_logo.png" },
             { name: "Redux", logo: "redux_logo.png" },

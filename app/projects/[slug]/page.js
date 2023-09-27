@@ -39,7 +39,7 @@ const Project = ({ params }) => {
                         </section>
                         {/* <h1 className="text-[#F16C20] font-bold text-[36px] flex justify-center"><span className="">{params.slug}</span></h1> */}
                         {project && project.videoUrl && <>
-                            <div className="videoPlayer w-[100%] mt-16">
+                            <div className="videoPlayer w-[100%] mt-6">
                                 <Video
                                     // poster={`/${project.thumbnailUrl}`}
                                     autoplay loop>
@@ -54,14 +54,24 @@ const Project = ({ params }) => {
                             <div className="bg-[#1395BA]/[15%] rounded-[10px] col-span-2 px-10 py-10">
                                 <h2 className=""><span className="font-bold text-[20px]  text-[#F16C20]">{params.slug}</span></h2>
                                 {/* <h2 className="mt-8"><span className="font-bold text-[20px]  text-[#F16C20]">Description</span></h2> */}
-                                <ul className="mt-8">
-                                    {project && project?.discriptionPoints?.map((disp, i) => {
-                                        return <>
-                                            <li className="mb-2 list-disc">{disp}</li>
-                                        </>
-                                    })
-                                    }
-                                </ul>
+                                <div>
+                                    <ul className="mt-8 ml-4 list-disc">
+                                        {project && project?.discriptionPoints?.map((disp, i) => {
+                                            return <>
+                                                <li className="mb-2">{disp}</li>
+                                            </>
+                                        })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="mt-4">
+                                    <span className="font-bold text-[#F16C20]">Demo Credentials: </span><br />
+                                    <div className="demoCredentials pl-8 pt-2">
+                                        <span className="font-bold text-[#F16C20]">Email: </span><span>{project?.demoCredentials_Email}</span><br />
+                                        <span className="font-bold text-[#F16C20]">Password: </span><span>{project?.demoCredentials_Pass}</span><br />
+
+                                    </div>
+                                </div>
 
                                 <div className="Project_actionButtons flex mt-8">
                                     <Link href={`${project.githubLink}`} target="blank">
