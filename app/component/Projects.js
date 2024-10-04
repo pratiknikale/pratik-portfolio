@@ -27,7 +27,7 @@ export default function Projects() {
                             {i % 2 == 0
                                 ?
                                 <>
-                                    <div className={`grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] ${i === 0 ? "mt-0" : "mt-5"}`}>
+                                    <div className={`grid py-10 sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] ${i === 0 ? "mt-0" : "mt-5"}`}>
                                         <div className="sm:px-6 px-4 flex flex-col justify-center items-center sm:py-10 pb-10 sm:order-first order-last">
                                             <h2 className="text-[#F16C20] font-bold text-[20px]">{project.name}</h2>
                                             <p className="leading-[20px] text-center py-2">{project.discriptionPoints[0].substring(0, 150) + " ..."}</p>
@@ -91,7 +91,7 @@ export default function Projects() {
                                 </>
                                 :
                                 <>
-                                    <div className={`grid sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] ${i === 0 ? "mt-0" : "mt-5"}`}>
+                                    <div className={`grid py-10 sm:grid-cols-2 grid-cols-1 bg-[#1395BA]/[15%] rounded-[10px] ${i === 0 ? "mt-0" : "mt-5"}`}>
                                         <div className="flex items-center sm:h-[100%] h-[250px] sm:p-3 sm:pb-3 pb-6 p-1">
                                             <div className="relative w-[100%] h-[100%]">
                                                 <div className="w-[100%] h-[100%] absolute">
