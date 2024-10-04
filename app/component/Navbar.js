@@ -19,8 +19,8 @@ export default function Navbar() {
                     <li className="cursor-pointer hover:text-[#F16C20] transition ease-in-out delay-40 duration-150"><Link href="/#section_contact">Contact</Link></li>
                 </ul>
             </nav> */}
-            <div className="flex items-center justify-between py-8">
-                <span className="text-[#F16C20] text-[20px] font-bold">PN</span>
+            <div className="flex items-center justify-between py-6">
+                <span className="text-[#F16C20] text-[20px] font-bold">{"< PN.dev />"}</span>
                 <nav>
                     <section className="MOBILE-MENU flex lg:hidden">
                         <div
