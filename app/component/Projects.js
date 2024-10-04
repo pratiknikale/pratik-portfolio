@@ -72,13 +72,15 @@ export default function Projects() {
                                         <div className="flex items-center sm:h-[100%] h-[250px] sm:p-3 sm:pb-3 pb-6 p-1">
                                             <div className="relative w-[100%] h-[100%]">
                                                 <div className="w-[100%] h-[100%] absolute">
-                                                    <Image
-                                                        className="object-cover w-[100%] h-[100%] rounded-[10px]"
-                                                        src={`/${project.thumbnailUrl}`}
-                                                        width={1000}
-                                                        height={1000}
-                                                        alt="Hero Image"
-                                                    />
+                                                    <Link href={`/projects/${project.name}`}>
+                                                        <Image
+                                                            className="object-cover w-[100%] h-[100%] rounded-[10px]"
+                                                            src={`/${project.thumbnailUrl}`}
+                                                            width={1000}
+                                                            height={1000}
+                                                            alt="Hero Image"
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 {/* <Link className="flex justify-center items-center w-[100%] h-[100%] bg-[black] rounded-[10px] absolute opacity-0 hover:opacity-60 transition ease-in-out delay-40 duration-150" href={`/projects/${project.name}`}>
                                                     <span className="text-[20px] text-[#F16C20] font-bold">Read More</span>
@@ -93,13 +95,15 @@ export default function Projects() {
                                         <div className="flex items-center sm:h-[100%] h-[250px] sm:p-3 sm:pb-3 pb-6 p-1">
                                             <div className="relative w-[100%] h-[100%]">
                                                 <div className="w-[100%] h-[100%] absolute">
-                                                    <Image
-                                                        className="object-cover w-[100%] h-[100%] rounded-[10px]"
-                                                        src={`/${project.thumbnailUrl}`}
-                                                        width={1000}
-                                                        height={1000}
-                                                        alt="Hero Image"
-                                                    />
+                                                    <Link href={`/projects/${project.name}`}>
+                                                        <Image
+                                                            className="object-cover w-[100%] h-[100%] rounded-[10px]"
+                                                            src={`/${project.thumbnailUrl}`}
+                                                            width={1000}
+                                                            height={1000}
+                                                            alt="Hero Image"
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 {/* <Link className="flex justify-center items-center w-[100%] h-[100%] bg-[black] rounded-[10px] absolute opacity-0 hover:opacity-60 transition ease-in-out delay-40 duration-150" href={`/projects/${project.name}`}>
                                                     <span className="text-[20px] text-[#F16C20] font-bold">Read More</span>
