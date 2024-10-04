@@ -80,9 +80,9 @@ export default function Projects() {
                                                         alt="Hero Image"
                                                     />
                                                 </div>
-                                                <Link className="flex justify-center items-center w-[100%] h-[100%] bg-[black] rounded-[10px] absolute opacity-0 hover:opacity-60 transition ease-in-out delay-40 duration-150" href={`/projects/${project.name}`}>
+                                                {/* <Link className="flex justify-center items-center w-[100%] h-[100%] bg-[black] rounded-[10px] absolute opacity-0 hover:opacity-60 transition ease-in-out delay-40 duration-150" href={`/projects/${project.name}`}>
                                                     <span className="text-[20px] text-[#F16C20] font-bold">Read More</span>
-                                                </Link>
+                                                </Link> */}
                                             </div>
                                         </div>
                                     </div>
@@ -101,9 +101,9 @@ export default function Projects() {
                                                         alt="Hero Image"
                                                     />
                                                 </div>
-                                                <Link className="flex justify-center items-center w-[100%] h-[100%] bg-[black] rounded-[10px] absolute opacity-0 hover:opacity-60 transition ease-in-out delay-40 duration-150" href={`/projects/${project.name}`}>
+                                                {/* <Link className="flex justify-center items-center w-[100%] h-[100%] bg-[black] rounded-[10px] absolute opacity-0 hover:opacity-60 transition ease-in-out delay-40 duration-150" href={`/projects/${project.name}`}>
                                                     <span className="text-[20px] text-[#F16C20] font-bold">Read More</span>
-                                                </Link>
+                                                </Link> */}
                                             </div>
                                         </div>
                                         <div className="sm:px-6 px-4 flex flex-col justify-center items-center sm:py-10 pb-10">
