@@ -53,13 +53,13 @@ export default function Contact() {
                     <div className="flex justify-center">
                         <form onSubmit={handleFormSubmit} className="mt-[60px]">
                             <div className="form-group">
-                                <input value={formData.name} onChange={handleFormDataChange} type="text" className="mb-[5px] p-3 rounded-[10px] bg-[#1395BA]/[15%] md:w-[600px] w-[310px] h-[42px] form-control" id="name" name="name" placeholder="Name" />
+                                <input value={formData.name} onChange={handleFormDataChange} type="text" className="mb-[5px] p-3 rounded-[10px] bg-[#1395BA]/[15%] backdrop-blur-lg md:w-[600px] w-[310px] h-[42px] form-control" id="name" name="name" placeholder="Name" />
                             </div>
                             <div className="form-group">
-                                <input value={formData.email} onChange={handleFormDataChange} type="email" className="mb-[5px] p-3 rounded-[10px] bg-[#1395BA]/[15%]  md:w-[600px] w-[310px] h-[42px] form-control" id="exampleFormControlInput1" name="email" placeholder="Email" />
+                                <input value={formData.email} onChange={handleFormDataChange} type="email" className="mb-[5px] p-3 rounded-[10px] bg-[#1395BA]/[15%] backdrop-blur-lg  md:w-[600px] w-[310px] h-[42px] form-control" id="exampleFormControlInput1" name="email" placeholder="Email" />
                             </div>
                             <div className="form-group">
-                                <textarea value={formData.message} onChange={handleFormDataChange} className="p-3 rounded-[10px] bg-[#1395BA]/[15%] md:w-[600px] w-[310px] h-[142px] form-control" id="exampleFormControlTextarea1" name="message" placeholder="Your message" rows="5"></textarea>
+                                <textarea value={formData.message} onChange={handleFormDataChange} className="p-3 rounded-[10px] bg-[#1395BA]/[15%] backdrop-blur-lg md:w-[600px] w-[310px] h-[142px] form-control" id="exampleFormControlTextarea1" name="message" placeholder="Your message" rows="5"></textarea>
                             </div>
                             <div className="contact-buttons flex float-right">
                                 <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] transition ease-in-out delay-100 duration-200 w-[181px] h-[35px] rounded-[10px] mt-[8px]">Submit</button>
