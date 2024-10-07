@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className='absolute'>
           <Image
-            className="w-[100%] imageFade opacity-[0.04] fixed"
+            className="w-[100%] imageFade opacity-[0.20] fixed"
             src="/coding1-bg.jpg"
             width={0}
             height={0}
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <div className='relative'>
           {children}
         </div>
-        <div className="myFooter bg-[#1395BA]/[15%] h-[50px] sm:text-[14px] text-[10px] text-[#bebebe] flex justify-center items-center">@ Copyright 2023. Developed by Pratik Nikale. All rights reserved.</div>
+        <div className="myFooter bg-[#1395BA]/[15%] backdrop-blur-lg h-[50px] sm:text-[14px] text-[10px] text-[#bebebe] flex justify-center items-center">@ Copyright 2023. Developed by Pratik Nikale. All rights reserved.</div>
       </body>
     </html>
   )

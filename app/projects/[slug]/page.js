@@ -33,10 +33,10 @@ const Project = ({ params }) => {
                     />
                 </div>
                 <div className='relative'>
+                    <section id="section_home" className="sticky px-12 top-0 z-50 bg-[#104964] bg-opacity-20 backdrop-blur-lg">
+                        <Navbar />
+                    </section>
                     <main className="py-4 xl:px-[185px] lg:px-[140px] md:px-[50px] px-[12px] font-primary">
-                        <section id="section_home" className="">
-                            <Navbar />
-                        </section>
                         {/* <h1 className="text-[#F16C20] font-bold text-[36px] flex justify-center"><span className="">{params.slug}</span></h1> */}
                         {project && project.videoUrl && <>
                             <div className="videoPlayer w-[100%] mt-6">
@@ -51,7 +51,7 @@ const Project = ({ params }) => {
                         </>
                         }
                         <div className="grid md:grid-cols-3 grid-cols-1 mt-6 gap-2">
-                            <div className="bg-[#1395BA]/[15%] rounded-[10px] col-span-2 px-10 py-10">
+                            <div className="bg-[#1395BA]/[15%] backdrop-blur-smd rounded-[10px] col-span-2 px-10 py-10">
                                 <h2 className=""><span className="font-bold text-[20px]  text-[#F16C20]">{params.slug}</span></h2>
                                 {/* <h2 className="mt-8"><span className="font-bold text-[20px]  text-[#F16C20]">Description</span></h2> */}
                                 <div>
@@ -82,7 +82,7 @@ const Project = ({ params }) => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="bg-[#1395BA]/[15%] rounded-[10px] py-10">
+                            <div className="bg-[#1395BA]/[15%] backdrop-blur-smd rounded-[10px] py-10">
                                 <h2 className="flex justify-center"><span className="font-bold text-[20px]  text-[#F16C20]">Technologies Used</span></h2>
                                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 p-7 gap-2">
                                     {project && project?.technologies?.map((tech, i) => {

@@ -127,7 +127,7 @@ export default function About() {
                             />
                         </div>
                     </div>
-                    <div className="sm:bg-[#1395BA]/[15%] bg-none rounded-[10px] h-[400px] flex flex-col justify-center items-center">
+                    <div className="sm:bg-[#1395BA]/[15%] backdrop-blur-smd bg-none rounded-[10px] h-[400px] flex flex-col justify-center items-center">
                         <p className="text-[#F16C20] font-bold text-[20px]">Who is this guy?</p>
                         <p className="mt-10 sm:px-10 px-4 text-center leading-[20px]">I&apos;m a Full-Stack Developer who has serious passion for logic building, problem solving, web development and technology. Experienced Full Stack Engineer with a demonstrated history of working in IT industry. Skilled in building elegant and performing web applications and software. <Link href="#section_contact"><span className="text-[#83e0fa] underline">Let&apos;s make something special</span></Link>.</p>
                         <div className="social-icon-links mt-10 h-12">
