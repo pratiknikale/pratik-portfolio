@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <section id="section_home" className="sticky px-12 top-0 z-50 bg-[#104964]">
+      <section id="section_home" className="sticky px-12 top-0 z-50 bg-[#104964] bg-opacity-20 backdrop-blur-lg">
         <Navbar />
       </section>
       <main className="pb-36 xl:px-[185px] lg:px-[140px] sm:px-[50px] px-[12px] font-primary">
