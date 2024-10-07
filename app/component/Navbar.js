@@ -20,7 +20,7 @@ export default function Navbar() {
                 </ul>
             </nav> */}
             <div className="flex items-center justify-between py-6">
-                <span className="text-[#F16C20] text-[20px] font-bold">{"< PN.dev />"}</span>
+                <span className="text-[#F16C20] text-[20px] font-bold cursor-pointer"><a href="/#section_hero">{"< PN.dev />"}</a></span>
                 <nav>
                     <section className="MOBILE-MENU flex lg:hidden">
                         <div

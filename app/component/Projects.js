@@ -59,13 +59,28 @@ export default function Projects() {
                                             </div>
                                             <div className="Project_actionButtons flex flex-wrap justify-center items-center">
                                                 <Link href={`/projects/${project.name}`}>
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Read More</button>
+                                                    <button class="group relative inline-flex h-12 items-center justify-center border-solid border-2 border-[#F16C20] overflow-hidden rounded-md bg-[#F16C20] hover:bg-[#EDEDED] active:scale-95 hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] text-neutral-200 transition hover:scale-110">
+                                                        <span>Read More</span>
+                                                        <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-700 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                                                            <div class="relative h-full w-8 bg-white/100"></div>
+                                                        </div>
+                                                    </button>
                                                 </Link>
                                                 <Link href={`${project.githubLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">GitHub</button>
+                                                    <button class="group relative inline-flex h-12 items-center justify-center border-solid border-2 border-[#F16C20] overflow-hidden rounded-md bg-[#F16C20] hover:bg-[#EDEDED] active:scale-95 hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] text-neutral-200 transition hover:scale-110">
+                                                        <span>GitHub</span>
+                                                        <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-700 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                                                            <div class="relative h-full w-8 bg-white/100"></div>
+                                                        </div>
+                                                    </button>
                                                 </Link>
                                                 <Link href={`${project.liveLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Live</button>
+                                                    <button class="group relative inline-flex h-12 items-center justify-center border-solid border-2 border-[#F16C20] overflow-hidden rounded-md bg-[#F16C20] hover:bg-[#EDEDED] active:scale-95 hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] text-neutral-200 transition hover:scale-110">
+                                                        <span>Live</span>
+                                                        <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-700 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                                                            <div class="relative h-full w-8 bg-white/100"></div>
+                                                        </div>
+                                                    </button>
                                                 </Link>
                                             </div>
                                         </div>
@@ -141,13 +156,28 @@ export default function Projects() {
                                             </div>
                                             <div className="Project_actionButtons flex flex-wrap justify-center items-center">
                                                 <Link href={`/projects/${project.name}`}>
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Read More</button>
+                                                    <button class="group relative inline-flex h-12 items-center justify-center border-solid border-2 border-[#F16C20] overflow-hidden rounded-md bg-[#F16C20] hover:bg-[#EDEDED] active:scale-95 hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] text-neutral-200 transition hover:scale-110">
+                                                        <span>Read More</span>
+                                                        <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-700 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                                                            <div class="relative h-full w-8 bg-white/100"></div>
+                                                        </div>
+                                                    </button>
                                                 </Link>
                                                 <Link href={`${project.githubLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">GitHub</button>
+                                                    <button class="group relative inline-flex h-12 items-center justify-center border-solid border-2 border-[#F16C20] overflow-hidden rounded-md bg-[#F16C20] hover:bg-[#EDEDED] active:scale-95 hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] text-neutral-200 transition hover:scale-110">
+                                                        <span>GitHub</span>
+                                                        <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-700 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                                                            <div class="relative h-full w-8 bg-white/100"></div>
+                                                        </div>
+                                                    </button>
                                                 </Link>
                                                 <Link href={`${project.liveLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Live</button>
+                                                    <button class="group relative inline-flex h-12 items-center justify-center border-solid border-2 border-[#F16C20] overflow-hidden rounded-md bg-[#F16C20] hover:bg-[#EDEDED] active:scale-95 hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] text-neutral-200 transition hover:scale-110">
+                                                        <span>Live</span>
+                                                        <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-700 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                                                            <div class="relative h-full w-8 bg-white/100"></div>
+                                                        </div>
+                                                    </button>
                                                 </Link>
                                             </div>
                                         </div>
