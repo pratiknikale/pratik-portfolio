@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "3DHomeDesigner",
-        thumbnailUrl: "3dDesignerThumbnailLaptopFrame62.png",
+        thumbnailUrl: "3dDesignerThumbnailLaptopFrame63.png",
         discriptionPoints: [
             "Developing a web application in a CI/CD environment capable of creating and customising a 3d representation of your room (bedroom, living room, kitchen).",
             "The application will help customize the users room in all the ways possible like room dimension, color, wallpaper, window, door, adding objects in room like bed, table, chair, table lamp and also position the object as user wish."
@@ -25,7 +25,7 @@ const projects = [
     },
     {
         name: "ManageFy",
-        thumbnailUrl: "managefyThumbnail12.png",
+        thumbnailUrl: "managefyThumbnail13.png",
         discriptionPoints: [
             "Developed a modern web application with role-based project and task management, allowing real-time data updates and reflections.",
             "Provides real-time chats between users.",
