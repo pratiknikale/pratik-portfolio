@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import Button from "../commonComponents/button";
+import Button from "../commonComponents/Button";
 
 export default function Hero() {
   const AnimatedImage = useRef(null);

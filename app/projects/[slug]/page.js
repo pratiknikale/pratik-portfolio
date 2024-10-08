@@ -7,7 +7,7 @@ import "react-html5video/dist/styles.css";
 import Navbar from "@/app/component/Navbar";
 import { useEffect, useState } from "react";
 import ProjectData from "../../data/projects";
-import Button from "@/app/commonComponents/button";
+import Button from "@/app/commonComponents/Button";
 
 const Project = ({ params }) => {
     let [project, setProject] = useState({});

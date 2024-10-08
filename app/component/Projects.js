@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProjectData from "../data/projects";
-import Button from "../commonComponents/button";
+import Button from "../commonComponents/Button";
 
 export default function Projects() {
 
