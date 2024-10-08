@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Button from "../commonComponents/button";
 
 export default function Contact() {
 
@@ -62,7 +63,7 @@ export default function Contact() {
                                 <textarea value={formData.message} onChange={handleFormDataChange} className="p-3 rounded-[10px] bg-[#1395BA]/[15%] backdrop-blur-lg md:w-[600px] w-[310px] h-[142px] form-control" id="exampleFormControlTextarea1" name="message" placeholder="Your message" rows="5"></textarea>
                             </div>
                             <div className="contact-buttons flex float-right">
-                                <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] transition ease-in-out delay-100 duration-200 w-[181px] h-[35px] rounded-[10px] mt-[8px]">Submit</button>
+                                <Button customClass="w-[181px] h-[35px] mt-[8px]">Submit</Button>
                             </div>
                         </form>
                     </div>

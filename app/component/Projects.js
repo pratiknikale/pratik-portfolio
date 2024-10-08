@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectData from "../data/projects"
+import ProjectData from "../data/projects";
+import Button from "../commonComponents/button";
 
 export default function Projects() {
 
@@ -59,13 +60,13 @@ export default function Projects() {
                                             </div>
                                             <div className="Project_actionButtons flex flex-wrap justify-center items-center">
                                                 <Link href={`/projects/${project.name}`}>
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Read More</button>
+                                                    <Button customClass="w-[100px] h-[27px] m-[11px]">Read More</Button>
                                                 </Link>
                                                 <Link href={`${project.githubLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">GitHub</button>
+                                                    <Button customClass="w-[100px] h-[27px] m-[11px]">GitHub</Button>
                                                 </Link>
                                                 <Link href={`${project.liveLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Live</button>
+                                                    <Button customClass="w-[100px] h-[27px] m-[11px]">Live</Button>
                                                 </Link>
                                             </div>
                                         </div>
@@ -141,13 +142,13 @@ export default function Projects() {
                                             </div>
                                             <div className="Project_actionButtons flex flex-wrap justify-center items-center">
                                                 <Link href={`/projects/${project.name}`}>
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Read More</button>
+                                                    <Button customClass="w-[100px] h-[27px] m-[11px]">Read More</Button>
                                                 </Link>
                                                 <Link href={`${project.githubLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">GitHub</button>
+                                                    <Button customClass="w-[100px] h-[27px] m-[11px]">GitHub</Button>
                                                 </Link>
                                                 <Link href={`${project.liveLink}`} target="blank">
-                                                    <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] m-[11px] transition ease-in-out delay-40 duration-150">Live</button>
+                                                    <Button customClass="w-[100px] h-[27px] m-[11px]">Live</Button>
                                                 </Link>
                                             </div>
                                         </div>
