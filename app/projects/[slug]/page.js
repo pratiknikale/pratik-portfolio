@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
-import ProjectData from "../../data/projects"
-import { useEffect, useState } from "react";
 import Navbar from "@/app/component/Navbar";
+import { useEffect, useState } from "react";
+import ProjectData from "../../data/projects";
+import Button from "@/app/commonComponents/button";
 
 const Project = ({ params }) => {
     let [project, setProject] = useState({});
@@ -75,10 +76,10 @@ const Project = ({ params }) => {
 
                                 <div className="Project_actionButtons flex mt-8">
                                     <Link href={`${project.githubLink}`} target="blank">
-                                        <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px]">GitHub</button>
+                                        <Button customClass="w-[100px] h-[27px]">GitHub</Button>
                                     </Link>
                                     <Link href={`${project.liveLink}`} target="blank">
-                                        <button className="bg-[#F16C20] border-solid border-2 border-[#F16C20] hover:bg-[#EDEDED] hover:text-[#F16C20] w-[100px] h-[27px] rounded-[10px] ml-[11px]">Live</button>
+                                        <Button customClass="w-[100px] h-[27px] ml-[11px]">Live</Button>
                                     </Link>
                                 </div>
                             </div>
