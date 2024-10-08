@@ -67,7 +67,7 @@ export default function About() {
                 <h2 className="font-bold text-[36px] flex justify-center"><span className="">ABOUT</span></h2>
                 <div className="grid sm:grid-cols-5 grid-cols-2 gap-4 mt-16">
                     <div className="flex flex-col items-center">
-                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center transition ease-in-out delay-40 duration-200 hover:drop-shadow-[0px_0px_20px_#1395BA]">
                             <span>
                                 <div className="fastAni p-4" ref={fastAni}></div>
                             </span>
@@ -76,7 +76,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
                     <div className="sm:flex sm:flex-col items-center hidden">
-                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center transition ease-in-out delay-40 duration-200 hover:drop-shadow-[0px_0px_20px_#1395BA]">
                             <span>
                                 <div className="responsiveAni p-2" ref={responsiveAni}></div>
                             </span>
@@ -85,7 +85,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">My layouts will work on any device, big or small.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center transition ease-in-out delay-40 duration-200 hover:drop-shadow-[0px_0px_20px_#1395BA]">
                             <span>
                                 <div className="complexAni" ref={complexAni}></div>
                             </span>
@@ -94,7 +94,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Intricate problems into elegant softwares is my forte.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center transition ease-in-out delay-40 duration-200 hover:drop-shadow-[0px_0px_20px_#1395BA]">
                             <span>
                                 <div className="scalableAni p-3" ref={scalableAni}></div>
                             </span>
@@ -103,7 +103,7 @@ export default function About() {
                         <p className="text-center px-[3px] leading-[20px]">Be it any number of people, my app can handle it.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center">
+                        <div className="bg-[#1395BA] h-28 w-28 rounded-full flex justify-center items-center transition ease-in-out delay-40 duration-200 hover:drop-shadow-[0px_0px_20px_#1395BA]">
                             <span>
                                 <div className="dynamicAni scale-125" ref={dynamicAni}></div>
                             </span>
@@ -116,7 +116,7 @@ export default function About() {
 
                 <div className="rounded-[10px] grid sm:grid-cols-2 grid-cols-1 mt-20 sm:bg-transparent bg-[#1395BA]/[15%]">
                     <div className="flex flex-col justify-center sm:items-start items-center">
-                        <div className="animation-pulse rounded-full bg-[#1395BA]/[15%] sm:mt-0 mt-10">
+                        <div className="animation-pulse rounded-full bg-[#1395BA]/[15%] sm:mt-0 mt-10 transition ease-in-out delay-40 duration-200 hover:drop-shadow-[0px_0px_20px_#1395BA]">
                             <Image
                                 className="rounded-full p-3 sm:w-[400px] sm:h-auto w-[260px] h-[260px]"
                                 src="/logo-images/profilePicture.png"
