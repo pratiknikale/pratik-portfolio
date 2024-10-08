@@ -1,10 +1,44 @@
 "use client"
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import throttle from "../helpers/throttle";
 
 export default function Navbar() {
 
+    const sections = [
+        { id: 'section_hero', title: 'Home' },
+        { id: 'section_about', title: 'About' },
+        { id: 'section_skills', title: 'Skills' },
+        { id: 'section_projects', title: 'Projects' },
+        { id: 'section_contact', title: 'Contact' },
+    ];
+
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+
+    const [activeSection, setActiveSection] = useState("section_hero");
+
+    const handleScroll = () => {
+        const middleViewport = window.innerHeight / 2; // Middle point of the viewport
+
+        const currentSection = sections.find((section) => {
+            const element = document.getElementById(section.id);
+            const { top, bottom } = element.getBoundingClientRect();
+            // Check if the middle of the viewport is within the section bounds
+            return top <= middleViewport && bottom >= middleViewport;
+        });
+
+        if (currentSection) {
+            setActiveSection(currentSection.id);
+        }
+    };
+
+    useEffect(() => {
+        const throttledHandleScroll = throttle(handleScroll, 200); // Adjust limit as needed
+        window.addEventListener('scroll', throttledHandleScroll);
+        return () => {
+            window.removeEventListener('scroll', throttledHandleScroll);
+        };
+    }, []);
 
 
     return (
@@ -51,19 +85,19 @@ export default function Navbar() {
                                 </svg>
                             </div>
                             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-                                <li className="border-b border-gray-400 my-8 uppercase hover:text-[#F16C20] transition ease-in-out delay-40 duration-150">
+                                <li className={`border-b border-gray-400 my-8 uppercase ${activeSection === "section_hero" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}>
                                     <Link onClick={() => setIsNavOpen((prev) => !prev)} href="/#section_hero">Home</Link>
                                 </li>
-                                <li className="border-b border-gray-400 my-8 uppercase hover:text-[#F16C20] transition ease-in-out delay-40 duration-150">
+                                <li className={`border-b border-gray-400 my-8 uppercase ${activeSection === "section_about" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}>
                                     <Link onClick={() => setIsNavOpen((prev) => !prev)} href="/#section_about">About</Link>
                                 </li>
-                                <li className="border-b border-gray-400 my-8 uppercase hover:text-[#F16C20] transition ease-in-out delay-40 duration-150">
+                                <li className={`border-b border-gray-400 my-8 uppercase ${activeSection === "section_skills" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}>
                                     <Link onClick={() => setIsNavOpen((prev) => !prev)} href="/#section_skills">Skills</Link>
                                 </li>
-                                <li className="border-b border-gray-400 my-8 uppercase hover:text-[#F16C20] transition ease-in-out delay-40 duration-150">
+                                <li className={`border-b border-gray-400 my-8 uppercase ${activeSection === "section_projects" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}>
                                     <Link onClick={() => setIsNavOpen((prev) => !prev)} href="/#section_projects">Projects</Link>
                                 </li>
-                                <li className="border-b border-gray-400 my-8 uppercase hover:text-[#F16C20] transition ease-in-out delay-40 duration-150">
+                                <li className={`border-b border-gray-400 my-8 uppercase ${activeSection === "section_contact" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}>
                                     <Link onClick={() => setIsNavOpen((prev) => !prev)} href="/#section_contact">Contact</Link>
                                 </li>
                             </ul>
@@ -71,11 +105,11 @@ export default function Navbar() {
                     </section>
 
                     <ul className="DESKTOP-MENU hidden space-x-[70px] lg:flex">
-                        <li className="cursor-pointer hover:text-[#F16C20] transition ease-in-out delay-40 duration-150"><Link href="/#section_hero">Home</Link></li>
-                        <li className="cursor-pointer hover:text-[#F16C20] transition ease-in-out delay-40 duration-150"><Link href="/#section_about">About</Link></li>
-                        <li className="cursor-pointer hover:text-[#F16C20] transition ease-in-out delay-40 duration-150"><Link href="/#section_skills">Skills</Link></li>
-                        <li className="cursor-pointer hover:text-[#F16C20] transition ease-in-out delay-40 duration-150"><Link href="/#section_projects">Projects</Link></li>
-                        <li className="cursor-pointer hover:text-[#F16C20] transition ease-in-out delay-40 duration-150"><Link href="/#section_contact">Contact</Link></li>
+                        <li className={`cursor-pointer ${activeSection === "section_hero" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}><Link href="/#section_hero">Home</Link></li>
+                        <li className={`cursor-pointer ${activeSection === "section_about" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}><Link href="/#section_about">About</Link></li>
+                        <li className={`cursor-pointer ${activeSection === "section_skills" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}><Link href="/#section_skills">Skills</Link></li>
+                        <li className={`cursor-pointer ${activeSection === "section_projects" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}><Link href="/#section_projects">Projects</Link></li>
+                        <li className={`cursor-pointer ${activeSection === "section_contact" && "text-[#F16C20]"} hover:text-[#F16C20] transition ease-in-out delay-40 duration-150`}><Link href="/#section_contact">Contact</Link></li>
                     </ul>
                 </nav>
                 <style>{`
